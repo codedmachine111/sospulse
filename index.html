@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src=
+    "https://smtpjs.com/v3/smtp.js">
+  </script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css">
+    <title>SendIt- Email your emergency contacts</title>
+</head>
+<body>
+    <div class="container">
+        <section class="main">
+            <nav>
+
+                <div class="logo">
+                    <a href="#">Send<span>I</span>t</a>
+                    <p>Stay Safe</p>
+                </div>
+    
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fa fa-bars"></i>
+                </label>
+                <ul class="list">
+    
+                    <li id="active"><a href="#" id="homeli"><i class="fas fa-home"></i></a></li>
+                    <li><a href="#l" id="d"><i class="fas fa-user-circle"></i></a></li>
+                    <li><a href="mailto:charlesbabbage1709@gmail.com" id="d"><i class="fas fa-paper-plane"></i></a></li>
+                </ul>
+            </nav>
+            <hr id="line">
+            <div class="inner">
+                <div class="clock">
+                    <div class="logoicon">
+                        <a href="#">Send<span>I</span>t</a>
+                    </div>
+                    <div class="time">
+                        60
+                    </div>
+                    <div class="btn">
+                        <button type="button" class="exp-btn" id="start" onclick="timer()">Send-It</button>
+                    </div>
+                </div>
+                <!-- <div class="tasks">
+                    <div class="heading">
+                        <h3>Select Photos</h3>
+                    </div>
+                    <hr>
+                        <form>
+                            <input type="file" id="myFile" name="filename" accept="image/gif, image/jpeg, image/png" hidden>
+                            <label for="myFile" id="addbtn"><i class="fas fa-plus-square"></i> Add Image</label>
+                          </form>
+                    
+                </div> -->
+            </div>
+            
+            
+        </section>
+    </div>
+    <div class="container2">
+        <section id="about">
+            <div class="titleabout">
+               <h2>A Tool that sends an emergency mail to your selected contacts.</h2> 
+            </div>
+            <hr id="line2">
+            <div class="box">
+                <h2>What is SendIt?</h2>
+                <p>Send-It is an online tool made for your safety. It can be used to send an SOS message to your emergency contacts. The tool sends an email and a text message to the emergency contacts just with a single click!</p>
+            </div>
+            <div class="box">
+                <h2>Features</h2>
+                <li> <p>Fast and meant for your safety.</p> </li>
+                <li> <p>Sends an SOS email to the selected emergency contacts.</p></li>
+                <li> <p>Sends the latitude and longitude of the user.</p> </li>
+                
+            </div>
+        </section>
+    </div> 
+    <footer class="footer">
+        <div class="dev">
+            <p>Developed by <a href="https://github.com/codedmachine111">coded_machine111</a></p>
+            <p id="links">
+                <i class="fab fa-github"></i>
+                <i class="fas fa-envelope"></i>
+                <i class="fab fa-instagram"></i>
+            </p>
+        </div>
+    </footer>
+<script src="./app.js"></script>
+</body>
+</html>
