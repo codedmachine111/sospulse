@@ -1,6 +1,6 @@
 const seconds= document.querySelector(".time");
 const start = document.getElementById("start")
-var time=60;
+var time=10;
 let lat
 let lon
 
