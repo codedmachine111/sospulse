@@ -16,6 +16,30 @@ window.addEventListener('load', ()=>{
     }
 })
 
+function showLocation(position) {
+    var latitude = position.coords.latitude;
+    var longitude = position.coords.longitude;
+    var latlongvalue = position.coords.latitude + ","+ position.coords.longitude;
+    var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="+latlongvalue+"&amp;zoom=14&amp;size=400x300&amp;key=AIzaSyAz0ozJnKEQYdnz0Fr2dl_fLmekvuurmtw";
+ }
+
+function errorHandler(err) {
+    if(err.code == 1) {
+       alert("Error: Access is denied!");
+    } else if( err.code == 2) {
+       alert("Error: Position is unavailable!");
+    }
+ }
+function getLocation(){
+    if(navigator.geolocation){
+       // timeout at 60000 milliseconds (60 seconds)
+       var options = {timeout:60000};
+       navigator.geolocation.getCurrentPosition
+       (showLocation, errorHandler, options);
+    } else{
+       alert("Sorry, browser does not support geolocation!");
+    }
+ 
 function timer(e) {
     if (time!=0) {
         time--;    
@@ -49,7 +73,7 @@ function sendEmail() {
       To: 'charlesbabbage1709@gmail.com',
       From: "akashdev1309@gmail.com",
       Subject: "Emergency Message",
-      Body: "Help me!"+"\n"+"Latitude : " +lat +"\n"+","+"Longitude : "+lon,
+      Body: "Help me!"+"\n"+"Latitude : " +lat +"\n"+","+"Longitude : "+lon+img_url,
     })
       .then(function (message) {
         alert("Mail sent successfully!")
